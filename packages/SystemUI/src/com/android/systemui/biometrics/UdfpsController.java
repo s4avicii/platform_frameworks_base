@@ -160,11 +160,8 @@ public class UdfpsController implements DozeReceiver, UdfpsHbmProvider {
     private Runnable mAodInterruptRunnable;
     private boolean mOnFingerDown;
     private boolean mAttemptedToDismissKeyguard;
-<<<<<<< HEAD
     private final int mUdfpsVendorCode;
-=======
     private Set<Callback> mCallbacks = new HashSet<>();
->>>>>>> 947cb478a60dc7575b11946a861a1b5b73556499
 
     @VisibleForTesting
     public static final AudioAttributes VIBRATION_SONIFICATION_ATTRIBUTES =
@@ -1034,4 +1031,5 @@ public class UdfpsController implements DozeReceiver, UdfpsHbmProvider {
          * Called onFingerDown events.
          */
         void onFingerDown();
+        }
 }
